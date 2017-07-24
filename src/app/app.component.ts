@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Changed again';
+  title = 'app works!';
+  home = true;
+  imagehome = true;
+
+  hideImage() {
+    this.imagehome = false;
+  }
+  showImage() {
+    if (this.imagehome === false) {
+      this.imagehome = true;
+    }
+
+  }
 }

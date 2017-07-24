@@ -1,0 +1,30 @@
+
+#container1{
+  width: 500px;
+  height: 400px;
+  background-color: darkgoldenrod;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+#container2{
+  width: 500px;
+  height: 400px;
+  background-color:darkorange;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+#container3{
+  width: 500px;
+  height: 400px;
+  background-color: lightseagreen;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+#container4{
+  width: 500px;
+  height: 400px;
+  background-color: olive;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}

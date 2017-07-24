@@ -1,4 +1,27 @@
-<h1>
-  {{title}}
-</h1>
-<h2>Hello GITHUB</h2>
+
+<div class="container" id="maincontianer"> <!-- Outer Container -->
+  <nav class="navbar navbar-inverse"> <!-- Navbar -->
+
+     <div class="container-fluid"> <!-- Inner Container -->
+
+        <div class="navbar-header"> <!-- Navbar Header Container -->
+
+          <a class="navbar-brand" routerLink="" (click)="showImage()">My Project</a>
+        </div>
+
+        <ul class="nav navbar-nav"> <!-- Unordered List  -->
+          <li><a routerLink="home" (click)="hideImage()">Home</a></li>
+          <li><a routerLink="about" (click)="hideImage()">About</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a routerLink="signup" (click)="hideImage()"><span class="glyphicon glyphicon-user" ></span> Sign Up</a></li>
+          <li><a routerLink="login" (click)="hideImage()"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+     </div>
+  </nav>
+  <div id="imgdiv" class="col-md-8">
+    <img src="./assets/home.png" alt="Main Page Image" id="imagehome" *ngIf="imagehome">
+  </div>
+</div>
+<router-outlet></router-outlet>
